@@ -1,0 +1,233 @@
+/* Style the body */
+body { margin: 0;}
+
+body,h2,h3,h4,h5,h6 {font-family: Raleway, sans-serif}
+
+.titre_header{
+	font-family: "Gill Sans";
+	font-weight: 900;
+	font-size: 60px;
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("mainimage.jpg");
+  min-height: 90%;
+}
+
+
+.navbar{ color: green; 
+		padding: 10px;
+		background-color: white;
+		}
+
+.logo{text-decoration: none;
+}
+
+.logo:hover{
+	background-color: green;
+	color: white;
+	padding: 20px;
+}	
+
+.bouton_navbar{
+	text-decoration: none;
+	padding: 20px;
+	font-family: consolas;
+	font-weight: 500;
+}
+
+.bouton_navbar:hover{
+	background-color: green;
+	color: white;
+	padding: 20px;
+}
+
+.header_image{
+	color: white;
+	text-align: left;
+	padding:48px;
+}
+
+.loader_nav{
+	float: right;
+}
+
+.section{
+	display: flex;
+	/*justify-content: space-around;*/
+}
+
+.section_info1, .section_info3{
+	padding:50px 16px;
+	background-position: center;
+	/*background-color: black;*/
+	background-size: cover;
+	width: 30%;
+	/*color: white;*/
+	text-align: center;	
+	opacity: 0.8;
+}
+
+.section_info1{
+	border-style: linear-gradient(to right red, orange);
+	border-width: 5px;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	border-image: linear-gradient(to right red, orange) 1 100%;
+	border-radius: 10%;
+}
+
+.section_info2{
+	border: 10px solid red;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 10% 10% 0% 0%;
+}
+
+.section_info3{
+	border: 10px solid red;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	border-radius: 10%;
+}
+
+.section_info1:hover, .section_info3:hover {
+	opacity: 1;
+	
+}
+
+.section_info2{
+	padding:50px 16px;
+	background-position: center;
+	background-color: white;
+	background-size: cover;
+	width: 30%;
+	color: black;
+	text-align: center;	
+	opacity: 0.5;
+}
+
+.section_info2:hover{
+	opacity: 1;
+	text-decoration-style: solid, 
+}
+
+.les_sections{
+	display: flex;
+	margin: 20px;
+	height: 100%;
+}
+
+
+.section_image{
+	margin: 20px;
+	background-position: center;
+  	background-size: cover;
+  	min-height: 90%;
+  	width: 70%;
+  	padding: 180px 16px;
+
+	/*background-color: gray;*/
+	background-image: url("infoloomoh.jpg");
+	animation-name: image_animee;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes image_animee {
+	0%   {background-image: url("mainimage.jpg");
+			color: white;
+			border-radius: 2%
+			}
+	50%  {background-image: url("infoloomoh.jpg");
+			color: black;
+			border-radius: 5%
+		}
+	100% {background-image: url("image_pc.jpg");
+			color: black;
+			text-align: left;
+			border-radius: 2%
+			}
+}
+
+.section_commentaire{
+	padding: 20px;
+	margin: 20px;
+	border: black solid;
+	border-radius: 5%;
+	width: 30%;
+	background-color: black;
+	padding-left: 100px;
+}
+
+.titre_commentaire{
+	color: white;	
+}
+
+.loader{
+	position:relative;
+	width: 200px;
+	height: 200px;	
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.loader span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 2px solid white;
+	pointer-events: none;
+	animation: animation_load 6s linear infinite;
+}
+
+.loader span:nth-child(1)
+{
+	border-radius: 47% 53% 51% 49% / 30% 29% 71% 70% ;
+}
+
+.loader span:nth-child(2)
+{
+	animation-direction: reverse;
+	animation-duration: 4s;
+	border-radius: 47% 53% 51% 49% / 30% 29% 71% 70%  ;
+}
+
+.loader span:nth-child(3)
+{
+	animation-duration: 3s;
+	border-radius: 47% 53% 51% 49% / 30% 29% 71% 70% ;
+}
+
+@keyframes animation_load{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+.loader h2{
+	color: #fff;
+	font-family: consolas;
+	font-weight: 500;
+	padding: all;
+	margin: auto;
+}
